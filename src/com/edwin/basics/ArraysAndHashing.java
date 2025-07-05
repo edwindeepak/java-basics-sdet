@@ -13,17 +13,17 @@ public class ArraysAndHashing {
 
     public static void main(String[] args) {
         // int[] nums = { 1, 2, 3, 4,3};
-        // String s = "ramu";
-        // String t = "aomu";
-        // System.out.println(isAnagram(s, t));
+         String s = "ramu";
+         String t = "amru";
+         System.out.println(isAnagram(s, t));
         // System.out.println(containsDuplicates(nums));
-        int[] nums = { 2, 7, 11, 15 };
-        int target = 9;
-        int[] twosumresult = twoSum(nums, target);
-        for (int i : twosumresult) {
-            System.out.println(i);
+        // int[] nums = { 2, 7, 11, 15 };
+        // int target = 9;
+        // int[] twosumresult = twoSum(nums, target);
+        // for (int i : twosumresult) {
+        //     System.out.println(i);
         }
-    }
+    
 
     public static boolean containsDuplicates(int[] nums) {
 
@@ -101,14 +101,14 @@ public class ArraysAndHashing {
             return false;
         }
         int[] alphabets = new int[26];
-        for (int i = 0; i < s.length(); i++) {
-            alphabets[s.charAt(i) - 'a']++;
+        for(int i=0;i<s.length();i++){
+            alphabets[s.charAt(i)-'a']++;
         }
-        for (int i = 0; i < t.length(); i++) {
-            if (--alphabets[t.charAt(i) - 'a'] < 0)
-                return false;
+        for(int i=0;i<t.length();i++){
+            if((--alphabets[t.charAt(i)-'a'])<0) return false;
         }
         return true;
+        
     }
 
     public static int[] twoSum(int[] nums, int target) {
