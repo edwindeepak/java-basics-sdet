@@ -110,6 +110,10 @@ public class ArraysAndHashing {
         return true;
         
     }
+    
+    // int[] nums = { 2, 7, 11, 15 };
+    // int target = 9;
+    // int[] twosumresult = twoSum(nums, target);
 
     public static int[] twoSum(int[] nums, int target) {
 
